@@ -7,6 +7,8 @@ import NewsDetail from "./pages/NewsDetail";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
 import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+
 import { useEffect } from "react";
 
 import { Product } from "./types/apiTypes"; // 引入型別
@@ -32,6 +34,7 @@ function App() {
 					<Route path="courses/:id" element={<CourseDetail />} />
 					<Route path="cart" element={<Cart />} />
 				</Route>
+				<Route path="/login" element={<Login />} />
 			</Routes>
 		</Router>
 	);
