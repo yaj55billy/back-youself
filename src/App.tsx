@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import AdminLayout from "./pages/admin/Layout";
+import Products from "./pages/admin/Products";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -35,6 +37,9 @@ function App() {
 					<Route path="cart" element={<Cart />} />
 				</Route>
 				<Route path="/login" element={<Login />} />
+				<Route path="/admin" element={<AdminLayout />}>
+					<Route path="products" element={<Products />} />
+				</Route>
 			</Routes>
 		</Router>
 	);
