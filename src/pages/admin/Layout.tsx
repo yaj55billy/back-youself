@@ -16,8 +16,8 @@ export default function AdminLayout() {
 
 	const navigation = [
 		{ name: "產品列表", href: "/admin/products", icon: Package },
-		{ name: "優惠券列表", href: "/admin/coupons", icon: Tag },
 		{ name: "訂單列表", href: "/admin/orders", icon: ShoppingCart },
+		{ name: "優惠券列表", href: "/admin/coupons", icon: Tag },
 		{ name: "文章列表", href: "/admin/articles", icon: FileText },
 	];
 
