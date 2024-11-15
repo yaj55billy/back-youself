@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import AdminLayout from "./pages/admin/Layout";
 import Products from "./pages/admin/Products";
 import Orders from "./pages/admin/Orders";
+import Coupons from "./pages/admin/Coupons";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -41,6 +42,7 @@ function App() {
 				<Route path="/admin" element={<AdminLayout />}>
 					<Route path="products" element={<Products />} />
 					<Route path="orders" element={<Orders />} />
+					<Route path="coupons" element={<Coupons />} />
 				</Route>
 			</Routes>
 		</Router>
